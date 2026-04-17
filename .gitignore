@@ -1,0 +1,4 @@
+# VSIX packaging artifacts
+.vsix-build/
+*.vsix
+*.zip

@@ -26,7 +26,7 @@ $description = [string]$package.description
 $version = [string]$package.version
 $engine = [string]$package.engines.vscode
 
-$stageDir = Join-Path $PSScriptRoot "..\.vsix-build\vscode-xcode-dark-theme"
+$stageDir = Join-Path $PSScriptRoot ".\.vsix-build\vscode-xcode-dark-theme"
 $extensionStageDir = Join-Path $stageDir "extension"
 $zipPath = [System.IO.Path]::ChangeExtension($OutFile, ".zip")
 

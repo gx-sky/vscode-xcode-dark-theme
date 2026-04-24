@@ -325,11 +325,13 @@
       "name": "Parameters",
       "scope": [
         "variable.parameter",
+        "variable.parameter.java",
         "meta.parameter",
+        "meta.parameter.java",
         "entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#DACA77"
+        "foreground": "#DFDFE0"
       }
     },
     {
@@ -454,7 +456,8 @@
         "punctuation.definition.annotation"
       ],
       "settings": {
-        "foreground": "#FF78B2"
+        "foreground": "#F97BB0",
+        "fontStyle": "bold"
       }
     },
     {
@@ -600,7 +603,8 @@
         "punctuation.definition.annotation.java"
       ],
       "settings": {
-        "foreground": "#FF78B2"
+        "foreground": "#F97BB0",
+        "fontStyle": "bold"
       }
     },
     {
@@ -609,7 +613,8 @@
         "punctuation.definition.annotation.java"
       ],
       "settings": {
-        "foreground": "#F97BB0"
+        "foreground": "#F97BB0",
+        "fontStyle": "bold"
       }
     },
     {
@@ -620,7 +625,8 @@
         "meta.record.java meta.annotation.java entity.name.type.annotation.java"
       ],
       "settings": {
-        "foreground": "#FF78B2"
+        "foreground": "#F97BB0",
+        "fontStyle": "bold"
       }
     },
     {
@@ -630,7 +636,8 @@
         "meta.constructor.java meta.annotation.java entity.name.type.annotation.java"
       ],
       "settings": {
-        "foreground": "#FD7CB2"
+        "foreground": "#F97BB0",
+        "fontStyle": "bold"
       }
     },
     {
@@ -640,7 +647,8 @@
         "meta.variable.java meta.annotation.java entity.name.type.annotation.java"
       ],
       "settings": {
-        "foreground": "#F19A9A"
+        "foreground": "#F97BB0",
+        "fontStyle": "bold"
       }
     },
     {
@@ -767,8 +775,10 @@
       "foreground": "#FFA245",
       "italic": true
     },
-    "parameter": "#DACA77",
-    "parameter.declaration": "#DACA77",
+    "parameter": "#DFDFE0",
+    "parameter:java": "#DFDFE0",
+    "parameter.declaration": "#DFDFE0",
+    "parameter.declaration:java": "#DFDFE0",
     "property": "#49B0CE",
     "property:java": "#49B0CE",
     "property.declaration": "#49B0CE",
@@ -782,7 +792,7 @@
       "italic": true
     },
     "property.readonly": {
-      "foreground": "#FFA245",
+      "foreground": "#49B0CE",
       "italic": true
     },
     "function": "#75C2B3",
@@ -819,11 +829,29 @@
     "typeParameter:java": "#49B0CE",
     "namespace": "#FFBF67",
     "namespace:java": "#FFBF67",
-    "decorator": "#FF78B2",
-    "decorator.declaration": "#FF78B2",
-    "decorator.declaration:java": "#FF78B2",
-    "decorator.static:java": "#FD7CB2",
-    "decorator:java": "#FF78B2",
-    "macro": "#FF78B2"
+    "decorator": {
+      "foreground": "#F97BB0",
+      "bold": true
+    },
+    "decorator.declaration": {
+      "foreground": "#F97BB0",
+      "bold": true
+    },
+    "decorator.declaration:java": {
+      "foreground": "#F97BB0",
+      "bold": true
+    },
+    "decorator.static:java": {
+      "foreground": "#F97BB0",
+      "bold": true
+    },
+    "decorator:java": {
+      "foreground": "#F97BB0",
+      "bold": true
+    },
+    "macro": {
+      "foreground": "#F97BB0",
+      "bold": true
+    }
   }
 }

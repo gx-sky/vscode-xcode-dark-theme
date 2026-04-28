@@ -12,7 +12,7 @@ if ([string]::IsNullOrWhiteSpace($ExtensionDir)) {
 }
 
 if ([string]::IsNullOrWhiteSpace($OutFile)) {
-    $OutFile = Join-Path $PSScriptRoot ".\vscode-xcode-dark-theme.vsix"
+    $OutFile = Join-Path $PSScriptRoot ".\sky-xcode-dark-theme.vsix"
 }
 
 # Read extension metadata from package.json to keep manifest fields consistent.
@@ -26,7 +26,7 @@ $description = [string]$package.description
 $version = [string]$package.version
 $engine = [string]$package.engines.vscode
 
-$stageDir = Join-Path $PSScriptRoot ".\.vsix-build\vscode-xcode-dark-theme"
+$stageDir = Join-Path $PSScriptRoot ".\.vsix-build\sky-xcode-dark-theme"
 $extensionStageDir = Join-Path $stageDir "extension"
 $zipPath = [System.IO.Path]::ChangeExtension($OutFile, ".zip")
 

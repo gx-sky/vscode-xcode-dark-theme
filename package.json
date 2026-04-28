@@ -28,6 +28,31 @@
         "label": "Sky Xcode Dark Theme",
         "uiTheme": "vs-dark",
         "path": "./themes/sky-xcode-dark-color-theme.json"
+      },
+      {
+        "label": "Sky Xcode Bright",
+        "uiTheme": "vs",
+        "path": "./themes/sky-xcode-bright-color-theme.json"
+      },
+      {
+        "label": "Sky Xcode Dark Purple Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sky-xcode-dark-purple-color-theme.json"
+      },
+      {
+        "label": "Sky Xcode Dark Blue Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sky-xcode-dark-blue-color-theme.json"
+      },
+      {
+        "label": "Sky Xcode Warm Dark Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sky-xcode-warm-dark-color-theme.json"
+      },
+      {
+        "label": "Sky Xcode Pure Black Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/sky-xcode-dark-Pure-color-theme.json"
       }
     ]
   }

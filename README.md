@@ -1,6 +1,6 @@
 # Sky Xcode Dark Theme（中文说明）
 
-`Sky Xcode Dark Theme` 是 IntelliJ `Xcode-Dark` 主题在 VS Code 中的高保真移植版本，并针对 Java/Spring 场景做了持续优化。
+`Sky Xcode Dark Theme` 是 IntelliJ `Xcode-Dark` 主题在 VS Code 中的高保真移植版本，并针对 Java/Spring 与现代前端场景做了持续优化。
 
 ## 基线来源
 
@@ -23,6 +23,16 @@
 - 注释：可访问性增强灰蓝色（`#8A98A6`）；原色 `#7F8C99` 在部分背景上对比度不足
 - 选择状态：Xcode 蓝色（`#0973EB`）
 
+## 当前配色策略（Vue/React/前端）
+
+- Vue/React 组件、继承类与类型引用：统一使用类型青蓝色
+- JS/TS 普通变量与 `const` 绑定：保持同一变量角色色；`const` 仅使用斜体区分
+- 对象属性：声明、解构与成员访问统一使用成员紫色
+- 枚举成员：统一使用常量橙色与斜体
+- 模块名与 CSS/SCSS namespace 前缀：统一使用命名空间金色
+- HTML/Vue/JSX 标签、属性与字符串值继续沿用标签粉、属性棕和字符串珊瑚色
+- CSS 自定义属性与 `var()` 引用保持同一变量色
+
 ## 已完成优化摘要
 
 - 增强 Java/Spring 专项规则：注解、导包、变量语义分类等。
@@ -35,6 +45,9 @@
 - 去除高风险 broad scope（如方法调用整段染色）以减少串色。
 - 统一类相关颜色，避免声明/引用/默认库多色割裂。
 - 统一泛型参数 `typeParameter` 与类型色，提升 `Map<String, Object>` 可读性。
+- 补齐 Vue `component` 语义 token，并统一 Vue/React 组件的 TextMate fallback。
+- 统一 JS/TS 对象属性、`const` 绑定、枚举成员、继承类和模块名的声明/引用颜色。
+- 对对象字面量键使用精确排除规则，避免误染方法名、字符串键、数字键和分隔符。
 
 ## 开发维护原则
 
@@ -52,6 +65,12 @@
   8. 注解成员在 semantic token 与 TextMate fallback 下的一致性
   9. 参数、final/readonly 局部变量的声明与多次引用
   10. 构造器声明/调用与同名类的颜色一致性
+  11. Vue/React 组件声明、导入与模板/JSX 使用
+  12. JS/TS `const` 声明与多次引用
+  13. 对象字面量、解构和成员访问中的同名属性
+  14. TS 枚举成员的声明与引用
+  15. HTML/Vue/JSX 标签、属性与嵌入表达式
+  16. CSS/SCSS 自定义属性的声明与 `var()` 引用
 
 ## 推荐排查流程
 

@@ -750,6 +750,103 @@
       }
     },
     {
+      "name": "Frontend Const Bindings",
+      "scope": [
+        "variable.other.constant.js",
+        "variable.other.constant.js.jsx",
+        "variable.other.constant.ts",
+        "variable.other.constant.tsx",
+        "variable.other.constant.object.js",
+        "variable.other.constant.object.js.jsx",
+        "variable.other.constant.object.ts",
+        "variable.other.constant.object.tsx"
+      ],
+      "settings": {
+        "foreground": "#1A1A1A",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Frontend Object Properties",
+      "scope": [
+        "meta.object-literal.key.js - entity.name.function - string - constant.numeric - punctuation.separator.key-value",
+        "meta.object-literal.key.js.jsx - entity.name.function - string - constant.numeric - punctuation.separator.key-value",
+        "meta.object-literal.key.ts - entity.name.function - string - constant.numeric - punctuation.separator.key-value",
+        "meta.object-literal.key.tsx - entity.name.function - string - constant.numeric - punctuation.separator.key-value",
+        "variable.object.property.js",
+        "variable.object.property.js.jsx",
+        "variable.object.property.ts",
+        "variable.object.property.tsx",
+        "variable.other.object.property.js",
+        "variable.other.object.property.js.jsx",
+        "variable.other.object.property.ts",
+        "variable.other.object.property.tsx",
+        "variable.other.constant.object.property.js",
+        "variable.other.constant.object.property.js.jsx",
+        "variable.other.constant.object.property.ts",
+        "variable.other.constant.object.property.tsx",
+        "variable.other.property.js",
+        "variable.other.property.js.jsx",
+        "variable.other.property.ts",
+        "variable.other.property.tsx",
+        "variable.other.constant.property.js",
+        "variable.other.constant.property.js.jsx",
+        "variable.other.constant.property.ts",
+        "variable.other.constant.property.tsx"
+      ],
+      "settings": {
+        "foreground": "#7A3E9D"
+      }
+    },
+    {
+      "name": "Frontend Enum Members",
+      "scope": [
+        "variable.other.enummember.js",
+        "variable.other.enummember.js.jsx",
+        "variable.other.enummember.ts",
+        "variable.other.enummember.tsx"
+      ],
+      "settings": {
+        "foreground": "#CC6D00",
+        "fontStyle": "italic"
+      }
+    },
+    {
+      "name": "Frontend Classes and Components",
+      "scope": [
+        "entity.other.inherited-class.js",
+        "entity.other.inherited-class.js.jsx",
+        "entity.other.inherited-class.ts",
+        "entity.other.inherited-class.tsx",
+        "support.class.component.js",
+        "support.class.component.js.jsx",
+        "support.class.component.tsx",
+        "support.class.component.vue",
+        "entity.name.type.class.vue"
+      ],
+      "settings": {
+        "foreground": "#00688B"
+      }
+    },
+    {
+      "name": "Frontend Modules and Namespace Prefixes",
+      "scope": [
+        "entity.name.type.module.js",
+        "entity.name.type.module.js.jsx",
+        "entity.name.type.module.ts",
+        "entity.name.type.module.tsx",
+        "entity.name.tag.namespace.js.jsx",
+        "entity.name.tag.namespace.tsx",
+        "entity.other.namespace-prefix.css",
+        "entity.name.function.namespace-prefix.css",
+        "entity.name.namespace-prefix.scss",
+        "entity.name.constant.namespace-prefix.less"
+      ],
+      "settings": {
+        "foreground": "#CC7A00"
+      }
+    },
+    {
       "name": "Labels",
       "scope": [
         "entity.name.label",
@@ -1176,6 +1273,7 @@
     "class.declaration": "#00688B",
     "class.declaration:java": "#00688B",
     "class.defaultLibrary": "#00688B",
+    "component": "#00688B",
     "interface": "#00688B",
     "interface:java": "#00688B",
     "interface.declaration": "#00688B",

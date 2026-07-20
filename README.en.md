@@ -1,22 +1,33 @@
 # Sky Xcode Dark Theme
 
-`Sky Xcode Dark Theme` is a VS Code port of the IntelliJ **Xcode-Dark** theme, with an emphasis on Java/Spring readability and consistent token coloring.
+`Sky Xcode Dark Theme` is a VS Code port of the IntelliJ **Xcode-Dark** theme, optimized for consistent Java/Spring and modern frontend token coloring.
 
 ## Baseline Sources
 
-- UI baseline: `resources/Xcode-Dark.theme.json`
-- Editor/token baseline: `resources/Xcode-Dark.xml`
+- UI and syntax palette baseline: `images/xcode-dark-palette.svg`
 - VS Code theme file: `themes/sky-xcode-dark-color-theme.json`
+
+Dark themes reuse the SVG role colors whenever possible. Adapted colors stay in the same hue family when additional contrast or VS Code-specific states are required.
 
 ## Current Color Strategy (Java/Spring)
 
-- Keywords: pink + bold (`#F97BB0`)
+- Keywords/annotations: bold Xcode pink (`#FF78B2`)
 - Strings: coral (`#FF806C`)
-- Methods/functions: teal (`#75C2B3`)
-- Local variables: white (`#FCFCFC`)
-- Global/member variables: cyan-blue (`#49B0CE`)
-- Classes/interfaces/enums/type references/type parameters: unified cyan-blue (`#49B0CE`)
-- Annotations/decorators: pink family (`#FF78B2`, with layered Java annotation tuning)
+- Numbers/characters: soft yellow (`#DACA77`)
+- Methods/functions: teal (`#75C3B3`)
+- Local variables and parameters: white (`#FCFCFC`)
+- Global/member variables and properties: purple (`#B37EEE`)
+- Classes/interfaces/enums/type references/type parameters: cyan-blue (`#49B0CE`)
+
+## Current Color Strategy (Vue/React/Frontend)
+
+- Vue/React components, inherited classes, and type references use the type cyan-blue.
+- JS/TS variables and `const` bindings keep the same variable color; italics distinguish readonly bindings.
+- Object property declarations, destructuring keys, and member access use the member purple.
+- Enum members use the constant orange with italics.
+- Module names and CSS/SCSS namespace prefixes use the namespace gold.
+- HTML/Vue/JSX tags, attributes, and string values retain tag pink, attribute brown, and string coral.
+- CSS custom-property declarations and `var()` references keep the same variable color.
 
 ## Completed Optimizations Summary
 
@@ -26,17 +37,23 @@
 - Unified class-related coloring (class/interface/enum/declaration/reference/defaultLibrary) into one color family.
 - Unified generic type parameters (`typeParameter`) with class/type color for cleaner `Map<String, Object>` readability.
 - Updated semantic token mappings to reduce declaration/use mismatch.
+- Added the Vue `component` semantic token and matching Vue/React TextMate fallbacks.
+- Unified JS/TS object properties, `const` bindings, enum members, inherited classes, and module names.
+- Used exclusion-based object-key selectors to avoid coloring methods, string keys, numeric keys, or separators.
 
 ## Key Development Rules
 
 - Prefer semantic tokens first; use TextMate rules as fallback.
 - Avoid broad meta scopes that can color entire expressions (for example `meta.method-call`).
 - Keep declaration and usage consistent for the same symbol category.
-- For Java tuning, validate at least these cases:
-  1. Method signature + generic return type
-  2. Local variable declaration + repeated usage
-  3. Member/global field declaration + usage
-  4. Annotation-heavy Spring service class
+- Validate at least these regression cases:
+  1. Java method signatures, generic types, arrays, fields, annotations, and constructors
+  2. Vue/React component declarations, imports, and template/JSX usage
+  3. JS/TS `const` declarations and repeated references
+  4. Object-literal, destructuring, and member-access property names
+  5. TypeScript enum declarations and references
+  6. HTML/Vue/JSX tags, attributes, and embedded expressions
+  7. CSS/SCSS custom-property declarations and `var()` references
 
 ## Recommended Debug Workflow
 

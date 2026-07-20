@@ -92,7 +92,7 @@
     "breadcrumb.activeSelectionForeground": "#FFFFFF",
     "breadcrumbPicker.background": "#F8F8F8",
     "editor.background": "#FDFDFD",
-    "editor.foreground": "#3D3D3D",
+    "editor.foreground": "#1A1A1A",
     "editorLineNumber.foreground": "#B0B0B0",
     "editorLineNumber.activeForeground": "#3D3D3D",
     "editorCursor.foreground": "#333333",
@@ -470,7 +470,7 @@
         "punctuation.separator"
       ],
       "settings": {
-        "foreground": "#3D3D3D"
+        "foreground": "#1A1A1A"
       }
     },
     {
@@ -598,7 +598,7 @@
         "entity.name.variable.parameter"
       ],
       "settings": {
-        "foreground": "#5C5C5C"
+        "foreground": "#1A1A1A"
       }
     },
     {
@@ -1136,13 +1136,13 @@
     "variable.declaration.member:java": "#7A3E9D",
     "variable.defaultLibrary": "#6A3D94",
     "variable.readonly": {
-      "foreground": "#CC6D00",
+      "foreground": "#1A1A1A",
       "italic": true
     },
-    "parameter": "#5C5C5C",
-    "parameter:java": "#5C5C5C",
-    "parameter.declaration": "#5C5C5C",
-    "parameter.declaration:java": "#5C5C5C",
+    "parameter": "#1A1A1A",
+    "parameter:java": "#1A1A1A",
+    "parameter.declaration": "#1A1A1A",
+    "parameter.declaration:java": "#1A1A1A",
     "property": "#7A3E9D",
     "property:java": "#7A3E9D",
     "property.declaration": "#7A3E9D",
@@ -1208,8 +1208,8 @@
     },
     "record:java": "#00688B",
     "record.declaration:java": "#00688B",
-    "recordComponent:java": "#5C5C5C",
-    "*.constructor:java": "#326D74",
+    "recordComponent:java": "#1A1A1A",
+    "*.constructor:java": "#00688B",
     "struct": "#00688B",
     "event": "#CC6D00",
     "label": "#326D74",

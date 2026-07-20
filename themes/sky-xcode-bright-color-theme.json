@@ -437,7 +437,7 @@
     "symbolIcon.enumeratorForeground": "#CC6D00",
     "symbolIcon.enumeratorMemberForeground": "#CC6D00",
     "symbolIcon.eventForeground": "#D73A49",
-    "symbolIcon.fieldForeground": "#00688B",
+    "symbolIcon.fieldForeground": "#7A3E9D",
     "symbolIcon.fileForeground": "#3D3D3D",
     "symbolIcon.functionForeground": "#326D74",
     "symbolIcon.interfaceForeground": "#00688B",
@@ -448,10 +448,10 @@
     "symbolIcon.namespaceForeground": "#CC7A00",
     "symbolIcon.nullForeground": "#A0A0A0",
     "symbolIcon.numberForeground": "#1C00CF",
-    "symbolIcon.objectForeground": "#00688B",
+    "symbolIcon.objectForeground": "#7A3E9D",
     "symbolIcon.operatorForeground": "#3D3D3D",
     "symbolIcon.packageForeground": "#CC7A00",
-    "symbolIcon.propertyForeground": "#00688B",
+    "symbolIcon.propertyForeground": "#7A3E9D",
     "symbolIcon.referenceForeground": "#00688B",
     "symbolIcon.snippetForeground": "#6A3D94",
     "symbolIcon.stringForeground": "#C41A16",
@@ -608,7 +608,7 @@
         "support.variable.property"
       ],
       "settings": {
-        "foreground": "#00688B"
+        "foreground": "#7A3E9D"
       }
     },
     {
@@ -618,7 +618,7 @@
         "variable.other.constant.property"
       ],
       "settings": {
-        "foreground": "#00688B",
+        "foreground": "#7A3E9D",
         "fontStyle": "italic"
       }
     },
@@ -712,7 +712,7 @@
         "support.variable.property.dom"
       ],
       "settings": {
-        "foreground": "#00688B"
+        "foreground": "#7A3E9D"
       }
     },
     {
@@ -1003,6 +1003,16 @@
       }
     },
     {
+      "name": "Java Annotation Members",
+      "scope": [
+        "entity.name.annotationMember.java",
+        "constant.other.key.java"
+      ],
+      "settings": {
+        "foreground": "#326D74"
+      }
+    },
+    {
       "name": "Java Type Declarations",
       "scope": [
         "entity.name.type.class.java",
@@ -1018,8 +1028,10 @@
       "name": "Java Type References",
       "scope": [
         "support.class.java",
+        "entity.other.inherited-class.java",
         "support.type.java",
         "storage.type.java",
+        "storage.type.object.array.java",
         "storage.type.generic.java"
       ],
       "settings": {
@@ -1035,7 +1047,7 @@
         "meta.field.java variable.other.object.property.java"
       ],
       "settings": {
-        "foreground": "#00688B"
+        "foreground": "#7A3E9D"
       }
     },
     {
@@ -1089,6 +1101,7 @@
       "scope": [
         "entity.name.package.java",
         "entity.name.namespace.java",
+        "entity.name.type.module.java",
         "keyword.other.package.java",
         "keyword.other.import.java"
       ],
@@ -1113,14 +1126,14 @@
     "variable.declaration:java": "#1A1A1A",
     "variable.local": "#1A1A1A",
     "variable.local:java": "#1A1A1A",
-    "variable.global": "#00688B",
-    "variable.global:java": "#00688B",
-    "variable.declaration.global": "#00688B",
-    "variable.declaration.global:java": "#00688B",
-    "variable.member": "#00688B",
-    "variable.member:java": "#00688B",
-    "variable.declaration.member": "#00688B",
-    "variable.declaration.member:java": "#00688B",
+    "variable.global": "#7A3E9D",
+    "variable.global:java": "#7A3E9D",
+    "variable.declaration.global": "#7A3E9D",
+    "variable.declaration.global:java": "#7A3E9D",
+    "variable.member": "#7A3E9D",
+    "variable.member:java": "#7A3E9D",
+    "variable.declaration.member": "#7A3E9D",
+    "variable.declaration.member:java": "#7A3E9D",
     "variable.defaultLibrary": "#6A3D94",
     "variable.readonly": {
       "foreground": "#CC6D00",
@@ -1130,20 +1143,20 @@
     "parameter:java": "#5C5C5C",
     "parameter.declaration": "#5C5C5C",
     "parameter.declaration:java": "#5C5C5C",
-    "property": "#00688B",
-    "property:java": "#00688B",
-    "property.declaration": "#00688B",
-    "property.declaration:java": "#00688B",
+    "property": "#7A3E9D",
+    "property:java": "#7A3E9D",
+    "property.declaration": "#7A3E9D",
+    "property.declaration:java": "#7A3E9D",
     "property.static": {
-      "foreground": "#00688B",
+      "foreground": "#7A3E9D",
       "italic": true
     },
     "property.static:java": {
-      "foreground": "#00688B",
+      "foreground": "#7A3E9D",
       "italic": true
     },
     "property.readonly": {
-      "foreground": "#00688B",
+      "foreground": "#7A3E9D",
       "italic": true
     },
     "function": "#326D74",
@@ -1197,7 +1210,6 @@
     "record.declaration:java": "#00688B",
     "recordComponent:java": "#5C5C5C",
     "*.constructor:java": "#326D74",
-    "*.importDeclaration:java": "#CC7A00",
     "struct": "#00688B",
     "event": "#CC6D00",
     "label": "#326D74",
